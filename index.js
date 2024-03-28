@@ -3,7 +3,7 @@ const app = express()
 const port = 80
 
 app.get('/', (req, res) => {
-  res.send('All parameters: '+JSON.stringify(req.query))
+  res.send('Parâmetros recebidos: '+JSON.stringify(req.query))
 })
 
 app.listen(port, () => {
